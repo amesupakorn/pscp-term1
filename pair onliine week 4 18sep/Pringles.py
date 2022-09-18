@@ -1,5 +1,0 @@
-""" Pringles """
-
-def main():
-    """ Pringles """
-    

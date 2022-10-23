@@ -2,19 +2,18 @@
 import json
 def main():
     """Filter"""
-    my_dict = input()
-    my_list = ['0']
-    test = float(input())
-    my_dict = json.loads(my_dict)
-    for key in my_dict:
-        if my_dict[key] >= test:
-            my_list.append('%s %.2f' %(key, float(my_dict[key])))
+    dictt = json.loads(input())
+    group = ['0']
+    score = float(input())
+    for i in dictt:
+        if dictt[i] >= score:
+            group.append('%s %.2f' %(i, float(dictt[i])))
         else:
             pass
-    if len(my_list) >= 2:
-        my_list.remove('0')
-    my_list.sort()
-    for i in my_list:
+    if len(group) >= 2:
+        group.remove('0')
+    group.sort()
+    for i in group:
         if i == "0":
             print("Nope")
             break
